@@ -4,26 +4,31 @@ body {
 
 h1, h2, h3 {
     font-family: "Lobster", cursive;
+    
 }
 
 h2 {
-    color: #324766;
+    color: #5f5f56a6;
+}
+
+h3 {
+    color:rgba(62, 135, 148, 0.918)
 }
 
 header h2 {
-    color: #3f577c;
+    color: #3f577cd7;
 }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
+    background-image: linear-gradient(#3555743a, rgba(19, 47, 59, 0.349));
     padding: 20px 0;
 }
 
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, #329296, #12a9c4, #0d868a);
-    color: white;
+    background-image: linear-gradient(to right, #21868a9c, #12a9c4b6, #12a9c4b6);
+    color: rgba(48, 70, 85, 0.918);
 }
 
 .row-content {
@@ -33,19 +38,19 @@ header h2 {
 }
 
 .navbar-dark {
-    background-color: #31536e10;
+    background-color: #31526ede;
 }
 
 .tab-content {
-    border: 1px solid #DDD;
+    border: 1px solid rgba(221, 221, 221, 0.534);
     border-top: none;
     padding: 10px;
 }
 
 carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(26, 24, 24, 0.5);
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid #96959b38;
 }
