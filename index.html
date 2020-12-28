@@ -331,20 +331,17 @@
               role="button"
               data-slide="next"
             >
+            <!-- Replace button group with single button for exercise 2 -->
               <span class="carousel-control-next-icon"></span>
-              <span class="sr-only">Next</span>
-              </a>
-              <!-- Add & Style Button Controls -->
-              <div class="btn-group" id="carouselButton">
-                <button class="btn btn-danger btn-sm" id="carouselPause">
-                  <i class="fa fa-pause"></i></button
-                ><button class="btn btn-danger btn-sm" id="carouselPlay">
-                  <i class="fa fa-play"></i>
-                </button>
-          <!-- </div> End of Style Button Controls -->
+              <span class="sr-only">Next</span></a
+            >
+            <button class="btn btn-danger btn-sm" id="carouselButton">
+              <i class="fa fa-pause"></i>
+            </button>
+          </div>
         </div>
       </div>
-      </div>
+            <!-- Single button replace ends -->
       <!-- end homepage carousel -->
 
       <!-- Our campsites section -->
@@ -476,16 +473,22 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  
+
     <!-- Add jQuery Script, must come first, then Popper.js, then the Bootstrap Javascript plugins -->
+    <!-- Replaced original jQuery script for part 2 exercise -->
     <script>
       $(function () {
-        $('.carousel').carousel({ interval: 2000 });
-        $('#carouselPause').click(function () {
-          $('.carousel').carousel('pause');
-        });
-        $('#carouselPlay').click(function () {
-          $('.carousel').carousel('cycle');
+        $(".carousel").carousel({ interval: 2000 });
+        $("#carouselButton").click(function () {
+          if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+            $(".carousel").carousel("pause");
+            $("#carouselButton").children("i").removeClass("fa-pause");
+            $("#carouselButton").children("i").addClass("fa-play");
+          } else {
+            $(".carousel").carousel("cycle");
+            $("#carouselButton").children("i").removeClass("fa-play");
+            $("#carouselButton").children("i").addClass("fa-pause");
+          }
         });
       });
     </script>
