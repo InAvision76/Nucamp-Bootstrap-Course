@@ -1,12 +1,14 @@
-$color-primary: #3046C5;
+$color-primary: #3046c5;
 $color-secondary: #5637dd;
-$color-pale: #CEC8FF;
-$color-mid: #901CAD;
+$color-pale: #cec8ff;
+$color-mid: #901cad;
 $color-dark: #60106b;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-teal: #17a2b8;
+$color-mid: #901cad;
 
-$body-font: "Open Sans", sans-serif;
-$header-font: "Lobster", cursive;
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Lobster', cursive;
 
 
 
@@ -74,3 +76,20 @@ header {
     bottom: 0;
     z-index: 100;
 }
+
+#reserveModal {
+    .modal-header {
+      background: $color-teal;
+      color: white;
+    }
+  }
+  
+  #loginModal {
+    .modal-header {
+      background: $color-mid;
+      color: white;
+    }
+  }
+
+
+
